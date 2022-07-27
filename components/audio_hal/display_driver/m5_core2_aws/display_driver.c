@@ -22,12 +22,13 @@ void display_function()
     xSemaphoreTake(xGuiSemaphore, portMAX_DELAY);
 
     lv_obj_t * time_label = lv_label_create(lv_scr_act(), NULL);
-    lv_obj_set_pos(time_label, 10, 5);
+    lv_obj_set_pos(time_label, 10, 10);
     lv_label_set_align(time_label, LV_LABEL_ALIGN_CENTER);
-    lv_label_set_text(time_label, "******ALEXA APP*******");
+    lv_label_set_text(time_label, "******Amazon Alexa for M5Core2******");
 
     lv_obj_t * brightness_label = lv_label_create(lv_scr_act(), NULL);
-    lv_obj_align(brightness_label, time_label, LV_ALIGN_OUT_BOTTOM_LEFT, 0, 45);
+    // lv_obj_align(brightness_label, time_label, LV_ALIGN_OUT_BOTTOM_LEFT, 0, 45);
+    lv_obj_align(brightness_label, time_label, LV_ALIGN_OUT_BOTTOM_LEFT, 75, 150);
     lv_label_set_text(brightness_label, "Screen brightness");
 
     lv_obj_t * brightness_slider = lv_slider_create(lv_scr_act(), NULL);
