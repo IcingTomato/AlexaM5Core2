@@ -2,6 +2,8 @@
 
 ## 1. Introduction
 
+
+
 ## 2. Development Setup
 
 This sections talks about setting up your development host, fetching the git repositories, and instructions for build and flash.
