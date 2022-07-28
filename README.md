@@ -9,7 +9,7 @@
 [Amazon Alexa](https://developer.amazon.com/en-US/alexa) on [M5Core2](https://docs.m5stack.com/en/core/core2) and [M5Core2 for AWS](https://docs.m5stack.com/en/core/core2_for_aws)
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=KWVs89U9OWQ" target="_blank">
- <img src="https://i2.hdslb.com/bfs/archive/85ab255f1affa9eaeaeac63d88fd5fa0ff2bf22b.jpg" alt="Watch the video" width="240" height="180" border="10" />
+ <img src="https://i2.hdslb.com/bfs/archive/85ab255f1affa9eaeaeac63d88fd5fa0ff2bf22b.jpg" alt="Watch the video" width="640" height="360" border="10" />
 </a>
 
 You can use M5Core2Alexa like using a real Amazon Echo (sometimes, not always). You can ask M5Alexa questions like "Alexa, what time is sunrise?" or ask her into Japanese 「アレクサ、今何時ですか？」, or maybe you can control your lights and fans (I don't have any Alexa-supported IoT devices). 
