@@ -8,6 +8,8 @@
 
 [Amazon Alexa](https://developer.amazon.com/en-US/alexa) on [M5Core2](https://docs.m5stack.com/en/core/core2) and [M5Core2 for AWS](https://docs.m5stack.com/en/core/core2_for_aws)
 
+[![Alexa on M5Core2](https://i2.hdslb.com/bfs/archive/85ab255f1affa9eaeaeac63d88fd5fa0ff2bf22b.jpg)](https://www.youtube.com/watch?v=KWVs89U9OWQ)
+
 You can use M5Core2Alexa like using a real Amazon Echo (sometimes, not always). You can ask M5Alexa questions like "Alexa, what time is sunrise?" or ask her into Japanese 「アレクサ、今何時ですか？」, or maybe you can control your lights and fans (I don't have any Alexa-supported IoT devices). 
 
 ## 2. Development Setup
