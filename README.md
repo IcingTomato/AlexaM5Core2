@@ -1,4 +1,4 @@
-# Amazon Alexa for M5Core2
+# Amazon Alexa for M5Core2(ESP32)
 
 ## 1. Introduction
 
