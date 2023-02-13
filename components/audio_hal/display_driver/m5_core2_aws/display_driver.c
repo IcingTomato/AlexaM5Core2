@@ -7,9 +7,13 @@
 
 #include <display_driver.h>
 
+#include "Alexa_Logo_RGB_BLUE.c"
+
 #define TAG "display_driver_m5_core2_aws"
 
 extern SemaphoreHandle_t xGuiSemaphore;
+
+LV_IMG_DECLARE(Alexa_Logo_RGB_BLUE);
 
 static void brightness_slider_event_cb(lv_obj_t * slider, lv_event_t event) {
     if(event == LV_EVENT_VALUE_CHANGED) {
@@ -25,6 +29,11 @@ void display_function()
     lv_obj_set_pos(time_label, 10, 10);
     lv_label_set_align(time_label, LV_LABEL_ALIGN_CENTER);
     lv_label_set_text(time_label, "******Amazon Alexa for M5Core2******");
+    // lv_label_set_text(time_label, "      Amazon Alexa for M5Core2");
+
+    lv_obj_t * img1 = lv_img_create(lv_scr_act(), NULL);
+    lv_img_set_src(img1, &Alexa_Logo_RGB_BLUE);
+    lv_obj_align(img1, NULL, LV_ALIGN_CENTER, 0, -20);
 
     lv_obj_t * brightness_label = lv_label_create(lv_scr_act(), NULL);
     // lv_obj_align(brightness_label, time_label, LV_ALIGN_OUT_BOTTOM_LEFT, 0, 45);
@@ -37,7 +46,7 @@ void display_function()
 
     lv_obj_set_event_cb(brightness_slider, brightness_slider_event_cb);
     lv_slider_set_value(brightness_slider, 50, LV_ANIM_OFF);
-    lv_slider_set_range(brightness_slider, 30, 100);
+    lv_slider_set_range(brightness_slider, 10, 100);
 
     xSemaphoreGive(xGuiSemaphore);
 }
